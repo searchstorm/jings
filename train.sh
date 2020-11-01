@@ -1,1 +1,0 @@
-CUDNN_AUTOTUNE_DEFAULT=0 MXNET_GPU_MEM_POOL_TYPE=Round MXNET_GPU_MEM_POOL_ROUND_LINEAR_CUTOFF=32 python train_mask_rcnn.py --gpus 0,1 --dataset coco --network resnet50_v1b --resume mask_rcnn_fpn_resnet50_v1b_coco_0001_0.0000_1.params --epochs 10 --lr-decay-epoch 50,100,150 --val-interval 10 --use-fpn
